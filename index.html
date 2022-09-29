@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Business Corp</title>
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <h1>Business Corp query page for job inquiries and more!</h1>
+                <p>Input your information and select a page you would like to go to!</p>
+            </header>
+
+             <form action="./thanks.html" netlify method="post">
+                <fieldset>
+                    <legend>User Information</legend>
+
+                    <p>
+                        <label for="firstName">First Name:</label><br>
+                        <input type="text" name="firstName" id="firstName">
+                    </p>
+                    <p>
+                        <label for="lastName">Last Name:</label><br>
+                        <input type="text" name="lastName" id="lastName">
+                    </p>
+                    <p>
+                        <label for="eMail">Email:</label><br>
+                        <input type="text" name="eMail" id="eMail">
+                    </p>
+                    <p>
+                        <label for="phoneNumber">Phone Number:</label><br>
+                        <input type="text" name="phoneNumber" id="phoneNumber">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What section are you here for?</legend>
+
+                    <p>Check all that apply</p>
+
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="careerOpp" id="careerOpp"
+                            value="careerOpp">
+                            <label for="careerOpp">Career Opportunities</label>
+                        </li>
+                        
+                        <li>
+                            <input type="checkbox" name="businessProp" id="businessProp"
+                            value="businessProp">
+                            <label for="tv">Business Proposal</label>
+                        </li>
+                        
+                        <li>
+                            <input type="checkbox" name="complaint" id="complaint"
+                            value="complaint">
+                            <label for="complaint">Customer Service Complaint</label>
+                        </li> 
+                    </ul>
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+             </form>
+        </main>
+        <p>Click the above submit button to submit your information and be redirected to the selected page(s).</p>
+    </body>
+</html>
